@@ -1,11 +1,11 @@
 
-import './App.css'
+// import './App.css'
 import Home from './assets/pages/Home'
 
 function App() {
 
   return (
-    <div>
+    <div className=''>
      <Home></Home>
       
     </div>

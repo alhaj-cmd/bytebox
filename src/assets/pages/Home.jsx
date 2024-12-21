@@ -1,11 +1,13 @@
 import React from 'react';
 import Nav from '../component/Nav';
+import Bannar from '../component/Bannar';
 
 const Home = () => {
   return (
-    <div>
+    <div className=''>
       <Nav></Nav>
-      <h1>Home pages</h1>
+      <Bannar></Bannar>
+      <h1 className='text-2xl'>Home pages</h1>
     </div>
   );
 };
