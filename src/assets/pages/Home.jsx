@@ -1,12 +1,14 @@
 import React from 'react';
 import Nav from '../component/Nav';
-import Bannar from '../component/Bannar';
+
 
 const Home = () => {
   return (
-    <div className=''>
+    <div>
+      <div className='h-16'>
       <Nav></Nav>
-      <Bannar></Bannar>
+        
+      </div>
       <h1 className='text-2xl'>Home pages</h1>
     </div>
   );

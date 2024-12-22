@@ -20,7 +20,7 @@ const Nav = () => {
     }
     return (
         <div>
-            <div className="navbar bg-base-100 shadow-lg  px-4 fixed z-10">
+            <div className="navbar bg-base-100 shadow-lg  px-4 fixed ">
                 <div className="flex-1">
                     <a className="btn btn-ghost gap-0 text-midnight text-xl">TOFEL<span className='text-purple'>viwe</span>
                     </a>
