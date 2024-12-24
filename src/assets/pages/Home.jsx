@@ -6,8 +6,7 @@ const Home = () => {
   return (
     <div>
       <div className='h-16'>
-      <Nav></Nav>
-        
+      <Nav></Nav> 
       </div>
       <h1 className='text-2xl'>Home pages</h1>
     </div>
