@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Nav = () => {
     const [theme, setTheme] = useState('light');
@@ -26,10 +27,32 @@ const Nav = () => {
                     </a>
                 </div>
                 <div className="flex-none">
-                    <ul className="menu menu-horizontal px-1">
-                        <li className='font-bold text-primary'><a>Home</a></li>
-                        <li className='font-bold text-primary'><a>Bookmarks</a></li>
-                        <li className='font-bold text-primary'><a>Blogs</a></li>
+                    <ul className="menu menu-horizontal font-bold px-1">
+                        {/* <li className='font-bold text-primary'><a>Home</a></li> */}
+                        <NavLink
+                            to="/"
+                            className={({ isActive }) =>
+                                 isActive ? "text-primary" : "text-secondary"
+                            }
+                        >
+                            Home
+                        </NavLink>
+                        <NavLink
+                            to="/Bannar"
+                            className={({ isActive }) =>
+                                 isActive ? "text-primary" : "text-secondary"
+                            }
+                        >
+                            Blogs
+                        </NavLink>
+                        <NavLink
+                            to="/Banner"
+                            className={({ isActive, isPending }) =>
+                                isPending ? "pending" : isActive ? "active" : ""
+                            }
+                        >
+                            BookMarks
+                            </NavLink>
                     </ul>
                 </div>
                 <label className="grid cursor-pointer place-items-center">
