@@ -16,11 +16,18 @@ import {
 } from "react-router-dom";
 import "./index.css";
 import Home from "./assets/pages/Home";
+import Bannar from "./assets/component/Bannar";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home/>,
+    children:[
+      {
+        path:'/Bannar',
+        element: <Bannar/>
+      }
+    ]
   },
 ]);
 
