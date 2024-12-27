@@ -26,7 +26,7 @@ const Nav = () => {
                     <a className="btn btn-ghost gap-0 text-midnight text-xl">TOFEL<span className='text-purple'>viwe</span>
                     </a>
                 </div>
-                <div className="flex-none">
+                <div className="flex-none gap-4">
                     <ul className="menu menu-horizontal font-bold px-1">
                         {/* <li className='font-bold text-primary'><a>Home</a></li> */}
                         <NavLink
@@ -46,9 +46,9 @@ const Nav = () => {
                             Blogs
                         </NavLink>
                         <NavLink
-                            to="/Banner"
-                            className={({ isActive, isPending }) =>
-                                isPending ? "pending" : isActive ? "active" : ""
+                            to="/Bookmark"
+                            className={({ isActive}) =>
+                                isActive ? "text-primary" : "text-secondary"
                             }
                         >
                             BookMarks
