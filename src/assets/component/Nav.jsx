@@ -26,8 +26,8 @@ const Nav = () => {
                     <a className="btn btn-ghost gap-0 text-midnight text-xl">TOFEL<span className='text-purple'>viwe</span>
                     </a>
                 </div>
-                <div className="flex-none gap-4">
-                    <ul className="menu menu-horizontal font-bold px-1">
+                <div className="flex-none gap-2">
+                    <ul className="menu menu-horizontal font-bold px-1 gap-4 mr-4">
                         {/* <li className='font-bold text-primary'><a>Home</a></li> */}
                         <NavLink
                             to="/"
