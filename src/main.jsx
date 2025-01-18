@@ -17,6 +17,9 @@ import {
 import "./index.css";
 import Home from "./assets/pages/Home";
 import Bannar from "./assets/component/Bannar";
+import Login from "./assets/component/Login/Login";
+import Register from "./assets/component/Register/Register";
+import Bookmark from "./assets/component/BookMark/Bookmark";
 
 const router = createBrowserRouter([
   {
@@ -29,7 +32,15 @@ const router = createBrowserRouter([
       },
       {
         path:'/Bookmark',
-        element: <Bannar/>
+        element: <Bookmark/>
+      },
+      {
+        path:'/login',
+        element: <Login/>
+      },
+      {
+        path:'/register',
+        element: <Register/>
       }
     ]
   },

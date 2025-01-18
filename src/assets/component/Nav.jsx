@@ -32,7 +32,7 @@ const Nav = () => {
                         <NavLink
                             to="/"
                             className={({ isActive }) =>
-                                 isActive ? "text-primary" : "text-secondary"
+                                isActive ? "text-primary" : "text-secondary"
                             }
                         >
                             Home
@@ -40,19 +40,24 @@ const Nav = () => {
                         <NavLink
                             to="/Bannar"
                             className={({ isActive }) =>
-                              isActive ? "text-primary" : "text-secondary"
+                                isActive ? "text-primary" : "text-secondary"
                             }
                         >
                             Blogs
                         </NavLink>
                         <NavLink
                             to="/Bookmark"
-                            className={({ isActive}) =>
+                            className={({ isActive }) =>
                                 isActive ? "text-primary" : "text-secondary"
                             }
                         >
                             BookMarks
-                            </NavLink>
+                        </NavLink>
+                        <NavLink to='/login'
+                            className={({ isActive }) => isActive ? 'text-primary' : 'text-secondary'}
+
+                        >Login</NavLink>
+                        <NavLink to='register' className={({ isActive }) => isActive ? 'text-primary' : 'text-secondary'}>Register</NavLink>
                     </ul>
                 </div>
                 <label className="grid cursor-pointer place-items-center">
