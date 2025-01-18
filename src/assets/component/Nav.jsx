@@ -40,7 +40,7 @@ const Nav = () => {
                         <NavLink
                             to="/Bannar"
                             className={({ isActive }) =>
-                                 isActive ? "text-primary" : "text-secondary"
+                              isActive ? "text-primary" : "text-secondary"
                             }
                         >
                             Blogs
