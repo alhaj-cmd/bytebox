@@ -10,15 +10,19 @@ const Register = () => {
                     <input type="text" className='input input-bordered w-full max-w-xs' />
                 </div>
                 <div>
-                    <p>Nama</p>
+                    <p>Photo</p>
                     <input type="text" className='input input-bordered w-full max-w-xs' />
                 </div>
                 <div>
-                    <p>Nama</p>
+                    <p>Email</p>
                     <input type="text" className='input input-bordered w-full max-w-xs' />
                 </div>
                 <div>
-                    <p>Nama</p>
+                    <p>Password</p>
+                    <input type="text" className='input input-bordered w-full max-w-xs' />
+                </div>
+                <div>
+                    <p>Confirm Password</p>
                     <input type="text" className='input input-bordered w-full max-w-xs' />
                 </div>
                 <button className='btn btn-primary'>Button</button>
