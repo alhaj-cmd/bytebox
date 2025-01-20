@@ -9,7 +9,7 @@ const Home = () => {
       <div className='h-16'>
       <Nav></Nav> 
       </div>
-      <h1 className='text-2xl'>Home pages</h1>
+      {/* <h1 className='text-2xl'>Home pages</h1> */}
       <Outlet></Outlet>
     </div>
   );
