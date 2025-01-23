@@ -5,7 +5,11 @@ const Register = () => {
     const handleRegister = (e) =>{
         e.preventDefault()
         const name = e.target.name.value;
-        console.log(name);
+        const photo = e.target.photo.value;
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        const confirmpassword = e.target.confirmpassword.value;
+        console.log(name, photo, email, password, confirmpassword);
 
     }
 
