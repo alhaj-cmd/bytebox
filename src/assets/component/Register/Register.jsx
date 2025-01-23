@@ -3,13 +3,15 @@ import React from 'react';
 const Register = () => {
 
     const handleRegister = (e) =>{
+        e.preventDefault()
+        const name = e.target.name.value;
 
     }
 
     return (
         <div className='text-center'>
             <h2>I'm a Register section</h2>
-            <form onClick={handleRegister()} action="">
+            <form onSubmit={handleRegister} action="">
                 <div>
                     <p>Nama</p>
                     <input name='name' type="text" className='input input-bordered w-full max-w-xs' />
