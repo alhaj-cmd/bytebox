@@ -1,31 +1,36 @@
 import React from 'react';
 
 const Register = () => {
+
+    const handleRegister = (e) =>{
+
+    }
+
     return (
         <div className='text-center'>
             <h2>I'm a Register section</h2>
-            <form action="">
+            <form onClick={handleRegister()} action="">
                 <div>
                     <p>Nama</p>
-                    <input type="text" className='input input-bordered w-full max-w-xs' />
+                    <input name='name' type="text" className='input input-bordered w-full max-w-xs' />
                 </div>
                 <div>
                     <p>Photo</p>
-                    <input type="text" className='input input-bordered w-full max-w-xs' />
+                    <input name='photo' type="text" className='input input-bordered w-full max-w-xs' />
                 </div>
                 <div>
                     <p>Email</p>
-                    <input type="text" className='input input-bordered w-full max-w-xs' />
+                    <input name='email' type="text" className='input input-bordered w-full max-w-xs' />
                 </div>
                 <div>
                     <p>Password</p>
-                    <input type="text" className='input input-bordered w-full max-w-xs' />
-                </div>
+                    <input name='password' type="text" className='input input-bordered w-full max-w-xs' />
+                </div> 
                 <div>
                     <p>Confirm Password</p>
-                    <input type="text" className='input input-bordered w-full max-w-xs' />
+                    <input name='confirmpassword' type="text" className='input input-bordered w-full max-w-xs' />
                 </div>
-                <button className='btn btn-primary'>Button</button>
+                <button type='submit' className='btn btn-primary'>Button</button>
             </form>
         </div>
     );
