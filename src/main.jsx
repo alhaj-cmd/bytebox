@@ -20,27 +20,28 @@ import Bannar from "./assets/component/Bannar";
 import Login from "./assets/component/Login/Login";
 import Register from "./assets/component/Register/Register";
 import Bookmark from "./assets/component/BookMark/Bookmark";
+import AuthProvider from "./assets/component/AuthProvider/AuthProvider";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
-    children:[
+    element: <Home />,
+    children: [
       {
-        path:'/Bannar',
-        element: <Bannar/>
+        path: '/Bannar',
+        element: <Bannar />
       },
       {
-        path:'/Bookmark',
-        element: <Bookmark/>
+        path: '/Bookmark',
+        element: <Bookmark />
       },
       {
-        path:'/login',
-        element: <Login/>
+        path: '/login',
+        element: <Login />
       },
       {
-        path:'/register',
-        element: <Register/>
+        path: '/register',
+        element: <Register />
       }
     ]
   },
@@ -48,7 +49,9 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>
 );
 
