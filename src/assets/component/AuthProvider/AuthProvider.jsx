@@ -9,11 +9,18 @@ const AuthProvider = ({children}) => {
     // const [user, setName]= useState('tmi kno bujona');
     const registerUser = (email, password) =>{
         createUserWithEmailAndPassword(auth, email, password)
+        .then( result = console.log(result.user));
+
+    }
+    const logInUser = (email, password) =>{
+        signInWithEmailAndPassword(auth, email, password)
+        .then( result = console.log(result.user));
 
     }
    
     const authInfo ={
-        registerUser
+        registerUser,
+        logInUser
     }
     
     return (
