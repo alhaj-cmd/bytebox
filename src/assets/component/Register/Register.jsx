@@ -13,7 +13,7 @@ const Register = () => {
         const password = e.target.password.value;
         const confirmpassword = e.target.confirmpassword.value;
         console.log(name, photo, email, password, confirmpassword);
-        registerUser(email, password);
+        registerUser(name, photo, email, password, confirmpassword);
 
     }
 
