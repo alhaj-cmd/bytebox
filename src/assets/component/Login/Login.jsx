@@ -1,8 +1,11 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../AuthProvider/AuthProvider';
+// import { AuthContext } from '../AuthProvider/AuthProvider';
 
 const Login = () => {
     const {logInUser} = useContext(AuthContext)
+    console.log(logInUser);
+
 
     const handleLogin = (e) =>{
         e.preventDefault()

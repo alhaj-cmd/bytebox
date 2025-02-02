@@ -1,6 +1,7 @@
 import React, { createContext} from 'react';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from '../../../Firebase/Firebase-init';
+// import { auth } from '../../../Firebase/Firebase-init';
 
 export const AuthContext = createContext(null);
 
@@ -8,13 +9,15 @@ const AuthProvider = ({children}) => {
 
     // const [user, setName]= useState('tmi kno bujona');
     const registerUser = (email, password) =>{
+        console.log(email);
         createUserWithEmailAndPassword(auth, email, password)
         .then( result => console.log(result.user));
 
     }
     // LOGIN SECTIONS
-    const logInUser = (email, password) =>{
-        signInWithEmailAndPassword(auth, email, password)
+    const logInUser = (email, confirmpassword) =>{
+        console.log(email);
+        signInWithEmailAndPassword(auth, email, confirmpassword)
         .then( result => console.log(result.user));
 
     }
