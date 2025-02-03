@@ -11,9 +11,9 @@ const Login = () => {
         e.preventDefault()
         const name = e.target.name.value;
         const email = e.target.email.value;
-        const confirmpassword = e.target.confirmpassword.value;
-        console.log(name, email, confirmpassword);
-        logInUser(name, email, confirmpassword);
+        const password = e.target.password.value;
+        console.log(name, email, password);
+        logInUser(name, email, password);
     }
 
     return (
@@ -31,7 +31,7 @@ const Login = () => {
                 </div>
                 <div>
                     <p>Confirm Password</p>
-                    <input name='confirmpassword' type="text" className='input input-bordered w-full max-w-xs' />
+                    <input name='password' type="text" className='input input-bordered w-full max-w-xs' />
                 </div>
                 <button type='submit' className='btn btn-primary'>Button</button>
             </form>
