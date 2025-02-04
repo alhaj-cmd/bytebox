@@ -16,7 +16,7 @@ const AuthProvider = ({children}) => {
     }
     // LOGIN SECTIONS
     const logInUser = (email, password) =>{
-        console.log(password, 'data could not find');
+        console.log(email, 'data could not find');
         signInWithEmailAndPassword(auth, email, password)
         .then( result => console.log(result.user));
 

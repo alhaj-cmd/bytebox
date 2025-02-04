@@ -7,7 +7,7 @@ const Login = () => {
     console.log(logInUser);
 
 
-    const handleLogin = (e) =>{
+    const handleLogin = (e) =>{  
         e.preventDefault()
         const name = e.target.name.value;
         const email = e.target.email.value;
