@@ -5,6 +5,7 @@ import { AuthContext } from '../AuthProvider/AuthProvider';
 const Login = () => {
     const {logInUser} = useContext(AuthContext)
     console.log(logInUser);
+    // this can be protected
 
 
     const handleLogin = (e) =>{  
